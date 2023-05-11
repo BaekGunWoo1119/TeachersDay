@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스승께 보내는 편지</title>
+    <style>
+        @font-face {
+            font-family: 'ONE-Mobile-POP';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'ONE-Mobile-Title';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        body{
+            background-color:  rgb(115, 185, 252);
+            background-image: url("https://post-phinf.pstatic.net/MjAxODA1MDJfNSAg/MDAxNTI1MjUwOTQ1MDM3.optXG3MWS-gsMj32KnSKMKjh1BwnRthyXLbRfpFg70Ig.bvD0iL5EGIPoCxztwIOFt1fkhYl6mJQi6ZqF8daXdSwg.JPEG/20180427_151010.jpg?type=w1200");
+            margin: 0 auto;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        img {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        button{
+            border: 15px solid #f15966;
+            border-radius: 50px;
+            background-color: #fdb7d2;
+            color: #dd326b;
+            text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;
+            display: block;
+            font-family: 'ONE-Mobile-POP';
+            font-size: 20px;
+            padding: 2%;
+            width: 60%;
+            transition: all 0.2s linear;
+        }
+
+        button:hover{
+            background-color: rgb(255, 161, 216);
+            color: yellow;
+            transform: scale(1.2);
+        }
+
+        #myMsg{
+            background-color: white;
+            border: 1px solid skyblue;
+            border-radius: 15px;
+            width: 55%;
+            padding: 1%;
+            
+        }
+
+        #myPrs{
+            background-color: white;
+            border: 1px solid skyblue;
+            border-radius: 15px;
+            width: 55%;
+            padding: 1%;
+            
+        }
+
+        p{
+            text-align: left;
+            font-family: 'ONE-Mobile-Title';
+            font-size: 10px;
+            padding: 1px 1px 1px 1px;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 40px;
+            font-family: 'ONE-Mobile-Title';
+            color: #dd326b;
+            text-shadow: -3px 0px black, 0px 3px black, 3px 0px black, 0px -3px black;
+        }
+
+        h3{
+            text-align: center;
+            font-size: 28px;
+            font-family: 'ONE-Mobile-Title';
+            color: #dd326b;
+            text-shadow: -3px 0px black, 0px 3px black, 3px 0px black, 0px -3px black;
+        }
+    </style>
+    <script type="text/javascript"> 
+        var bDisplay = true; 
+        function showMsg(){ 	
+            var con = document.getElementById("myMsg"); 
+            var btn = document.getElementById("BDMSG"); 
+            if(con.style.display=='none'){ 		
+                con.style.display = 'block';
+                btn.innerHTML="편지 숨기기"; 	
+            }else{ 		
+                con.style.display = 'none';
+                btn.innerHTML="편지 보기";	
+            } 
+        }
+    </script> 
+</head>
+<body>
+    <br><br><br>
+    <h1>앗! 당신은 제 스승이신가보군요?</h1>
+    <br><br><br>
+    <h3>못 다한 이야기를 부끄럽게나마</h3><br>
+    <h3>이 곳으로 전하고자 합니다.</h3><br>
+    <br><br><br>
+    <div>
+        <button>이상하게 보인다면?<br> 모바일로 보세요</button>
+    </div>
+    <br><br><br>
+    <div>
+        <button id="BDMSG"onclick="showMsg();">편지 보기</button>
+    </div>
+    <div id="myMsg" style="display: none;">
+        <p>
+            <br><br>
+            소중한 사제 관계가 어느덧 6년이 지났습니다. <br><br>
+            의욕만 많던 제자는 어느 새 취업과 병역의 의무로 인한 
+            고민들에 휩싸이는 나이가 되었습니다.<br><br>
+            남에게 뱉는 모든 말이 날카로워지고<br><br>
+            내 몸 하나 성히 보전하기도 벅찬 하루하루를 보내는
+            스물 셋이라는 나이 속에서, 그 힘듦을 걸으며 방황하는 저를 만나신,<br><br>
+            그럼에도 저에게 온정을 베풀며 올바른 길을 인도하고자 하였던 스승의 은혜가 <br><br>
+            그저 하늘같고 존경스럽기만 합니다. <br><br>
+            그 존경심에, 감히 발끝에도 비할 바 못되지만 <br><br>
+            이렇게 글자 몇자와 웹 페이지, 술 한 병으로나마 답례를 해보려 합니다.<br><br>
+            나아가시는 모든 길에 행복과 안녕이 깃들고. <br><br>
+            마주치는 인연들과 덧없이 즐거운 날을 만들며, <br><br><br>
+            사랑하는 이와의 백년해로를 기원하며, <br><br>
+            재주 없는 이공계의 작문을 마치도록 하겠습니다. <br><br><br><br><br>
+            항상 감사드리며 <br><br>
+            백건우 배상
+        </p>
+    </div>
+    <br><br><br>
+</body>  
+</html>
